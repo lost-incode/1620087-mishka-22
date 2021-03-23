@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Victoria Petruschenko](https://up.htmlacademy.ru/adaptive/22/user/1620087).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Артёмов] (https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
