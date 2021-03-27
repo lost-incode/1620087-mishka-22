@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">
+              Каталог товаров
+            </a>
+            <ul class="site-catalog">
+              <li class="catalog__item">
+                <a href="#">
+                  Новые поступления
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a href="#">
+                  Распродажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Вязание на заказ
+            </a>
+          </li>
+        </ul>
+        <a class="main-nav__link" href="#">
+          <span class="visually-hidden">Поиск по сайту</span>
+        </a>
+        <div class="main-nav__list user-list">
+          <a class="user-list__link" href="#">
+            Корзина: пока пуста
+          </a>
+        </div>
+      </nav>
+      <p class="page-header__subtitle">Бесплатная доставка по России</p>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+
 
   </body>
 </html>
