@@ -53,7 +53,7 @@
 
     <main class="page-main">
       <section class="form-preview">
-        <h3 class="form-preview__title">Вязание на заказ</h3>
+        <h1 class="form-preview__title">Вязание на заказ</h1>
         <p class="form-preview__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </section>
       <section class="order-form">
@@ -62,11 +62,11 @@
             <legend class="form-type__legend">Тип</legend>
             <ul class="type-list">
               <li class="type-list__item">
-                <input class="form-radio" type="radio" name="type-accessory" id="type-accessory" checked>
+                <input class="form-radio" type="radio" name="type-radio" id="type-accessory" value="accessory" checked>
                 <label for="type-accessory">Аксессуар для интерьера</label>
               </li>
               <li class="type-list__item">
-                <input class="form-radio" type="radio" name="type-toy" id="type-toy">
+                <input class="form-radio" type="radio" name="type-radio" id="type-toy" value="toy">
                 <label for="type-toy">Детская игрушка</label>
               </li>
             </ul>
@@ -104,28 +104,25 @@
             <legend class="form-name__legend">ФИО</legend>
             <ul class="name-list">
               <li class="name-list__item">
-                <label class="first-name">Имя:<input type="text" name="first-name" value="Введите ваше имя*"></label>
+                <label class="first-name">Имя:<input type="text" name="first-name" placeholder="Введите ваше имя*"></label>
               </li>
               <li class="name-list__item">
-                <label class="surname">Фамилия:<input type="text" name="surname" value="Укажите фамилию*"></label>
+                <label class="surname">Фамилия:<input type="text" name="surname" placeholder="Укажите фамилию*"></label>
               </li>
               <li class="name-list__item">
-                <label class="last-name">Отчество:<input type="text" name="last-name" value="Отчество, если желаете"></label>
+                <label class="last-name">Отчество:<input type="text" name="last-name" placeholder="Отчество, если желаете"></label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-phone">
-            <legend class="form-phone__legend">Тел</legend>
-            <input type="text" name="phone" value="+7 ХХХ ХХХ ХХ ХХ*">
-          </fieldset>
-          <fieldset class="form-email">
-            <legend class="form-email__legend">E-mail</legend>
-            <input type="text" name="email" value="Ваш Email*">
-          </fieldset>
-          <fieldset class="form-additionally">
-            <legend class="form-additionally__legend">Доп</legend>
-            <input type="text" name="additionally" value="Опишите все ваши пожелания к заказу">
-          </fieldset>
+            <label class="form-phone">Тел
+              <input type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            </label>
+            <label class="form-email">E-mail
+              <input type="text" name="email" placeholder="Ваш Email*">
+            </label>
+            <label class="form-additionally">Доп
+              <textarea type="text" name="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </label>
           <p class="form__title">*Поля обязательны для заполнения</p>
           <button class="form__button" type="submit">
             Отправить заказ
