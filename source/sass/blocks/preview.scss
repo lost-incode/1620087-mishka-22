@@ -1,0 +1,24 @@
+.preview {
+  position: relative;
+}
+
+.preview__title {
+  margin: 0;
+  text-align: center;
+  padding: 73px 30px;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.preview__wrapper {
+  height: 373px;
+  background-color: $special-light;
+  box-sizing: border-box;
+}
+
+.preview__list {
+  position: absolute;
+  left: 0;
+  top: 300px;
+}

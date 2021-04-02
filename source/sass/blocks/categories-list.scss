@@ -1,0 +1,45 @@
+.categories-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.categories-list__item {
+  height: 103px;
+}
+
+
+.categories-list__link-interior {
+  background-color: $basic-blue;
+}
+
+.categories-list__link-interior:hover,
+.categories-list__link-interior:active {
+  background-color: $basic-blue-hover;
+}
+
+.categories-list__link-toy {
+  background-color: $basic-extra-blue;
+}
+
+.categories-list__link-toy:hover,
+.categories-list__link-toy:active {
+  background-color: $basic-extra-blue-hover;
+}
+
+.categories-list__link {
+  display: block;
+  padding: 24px 30px 31px 30px;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: $basic-white;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.categories-list__text {
+  display: block;
+  max-width: 130px;
+}

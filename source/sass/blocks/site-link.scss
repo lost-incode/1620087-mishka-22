@@ -1,0 +1,18 @@
+.site-link {
+  display: block;
+  padding: 28.5px 30px 26.5px 76px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $basic-black;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.site-link:hover {
+  color: $special-dark-hover;
+}
+
+.site-link:active {
+  color: $special-dark-active;
+}

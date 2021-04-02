@@ -1,0 +1,24 @@
+.order-link {
+  display: block;
+  padding: 16px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: $basic-dark;
+  text-decoration: none;
+  border: 2px solid $basic-dark;
+}
+
+.order-link:hover {
+  color: $basic-white;
+  background-color: $basic-dark;
+  border: 2px solid $basic-dark;
+}
+
+.order-link:active {
+  color: $basic-white-active;
+  background-color: $basic-dark;
+  border: 2px solid $basic-dark;
+}
