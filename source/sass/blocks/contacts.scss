@@ -25,19 +25,20 @@
 }
 
 .contacts__email-link {
-  text-decoration: none;
+  text-decoration-style: solid;
+  text-decoration-color: $basic-blue;
+  text-underline-position: under;
   color: $basic-dark;
-  border-bottom: 1px solid $basic-blue;
 }
 
 .contacts__email-link:hover {
   color: $basic-extra-blue-hover;
-  border-bottom: 1px solid $basic-blue-hover;
+  text-decoration-color: $basic-blue-hover;
 }
 
 .contacts__email-link:active {
+  text-decoration: none;
   color: $basic-extra-blue-hover;
-  border: none;
 }
 
 .contacts__link {
