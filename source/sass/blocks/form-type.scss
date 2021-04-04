@@ -1,0 +1,46 @@
+.form-type {
+  padding: 0;
+  border: none;
+}
+
+.form-type__label {
+  display: block;
+  position: relative;
+  min-height: 42px;
+  padding: 11px 10px 11px 60px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form-type__radio + .form-type__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 42px;
+  height: 42px;
+  border: 2px solid $basic-dark;
+  border-radius: 50%;
+}
+
+.form-type__radio:hover + .form-type__label::before {
+  border-color: $special-extra-blue;
+}
+
+.form-type__radio:active + .form-type__label::before {
+  border-color: $special-dark-active;
+}
+
+.form-type__radio:checked + .form-type__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  width: 18px;
+  height: 18px;
+  background-color: $basic-blue;
+  border-radius: 50%;
+}
