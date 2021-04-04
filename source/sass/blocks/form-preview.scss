@@ -1,0 +1,21 @@
+.form-preview__wrapper {
+  height: 177px;
+  background-color: $special-light;
+  box-sizing: border-box;
+}
+
+.form-preview__title {
+  margin: 0 auto;
+  text-align: center;
+  padding: 73px 20px;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.form-preview__description {
+  padding: 17px 30px 29px 30px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $basic-dark;
+}
