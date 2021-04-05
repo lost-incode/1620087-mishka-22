@@ -23,15 +23,15 @@
   border-bottom: 2px solid $special-extra-blue;
 }
 
-.form-info__input::-webkit-input-placeholder,
-.form-info__textarea::-webkit-input-placeholder {
+.form-info__input::placeholder,
+.form-info__textarea::placeholder {
   font-family: inherit;
   font-size: 17px;
   line-height: 18px;
 }
 
-.form-info__input:focus::-webkit-input-placeholder,
-.form-info__textarea:focus::-webkit-input-placeholder {
+.form-info__input:focus::placeholder,
+.form-info__textarea:focus::placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -46,6 +46,7 @@
   color: $basic-dark;
   border: 2px solid $basic-dark;
   box-sizing: border-box;
+  resize: vertical;
 }
 
 .form-info__textarea:hover,
