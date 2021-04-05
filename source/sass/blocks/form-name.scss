@@ -40,12 +40,12 @@
   border-bottom: 2px solid $special-extra-blue;
 }
 
-.form-name__input::-webkit-input-placeholder {
+.form-name__input::placeholder {
   font-size: 17px;
   line-height: 18px;
 }
 
-.form-name__input:focus::-webkit-input-placeholder {
+.form-name__input:focus::placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
