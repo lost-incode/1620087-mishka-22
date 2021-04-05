@@ -1,0 +1,31 @@
+.card {
+  border-bottom: 1px solid $basic-light;
+}
+
+.card__title {
+  margin: 0;
+  padding: 27.5px 5px 6px 28px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  box-sizing: border-box;
+}
+
+.card__img {
+  width: 260px;
+  height: 195px;
+}
+
+.card__description {
+  margin: 0 28px 17.5px 28px;
+  font-size: 13px;
+  line-height: 30px;
+  color: $basic-dark;
+}
+
+.card__price {
+  margin: 22.5px 28px 26.5px 28px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+}
