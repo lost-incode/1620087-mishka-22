@@ -17,33 +17,33 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>
+              <a class="site-link">
                 Каталог товаров
               </a>
-              <ul class="site-catalog">
+              <ul class="site-list site-catalog">
                 <li class="site-catalog__item">
-                  <a href="#">
+                  <a class="site-link" href="#">
                     Новые поступления
                   </a>
                 </li>
                 <li class="site-catalog__item">
-                  <a href="#">
+                  <a class="site-link" href="#">
                     Распродажа
                   </a>
                 </li>
               </ul>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="site-link">
                 Вязание на заказ
               </a>
             </li>
           </ul>
-          <a class="main-nav__link link-search" href="#">
+          <a class="main-nav__link link-search site-link" href="#">
             Поиск по сайту
           </a>
           <div class="main-nav__list user-list">
-            <a class="user-list__link link-basket" href="#">
+            <a class="user-list__link link-basket site-link" href="#">
               Корзина: пока пуста
             </a>
           </div>
@@ -53,8 +53,10 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Вязание на заказ</h1>
-      <ul class="catalog">
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Каталог товаров</h1>
+      </div>
+      <ul class="catalog page-main__list">
         <li class="catalog__card card">
           <h2 class="card__title">Зайчик-попрыгайчик</h2>
           <img class="card__img" src="img/catalog/photo2.jpg" width="260" height="195" alt="Изображение вязаного зайчика в голубом костюме">
@@ -74,7 +76,7 @@
           <p class="card__price">1 500 руб.</p>
         </li>
       </ul>
-      <div class="video">
+      <div class="catalog__video video">
         <h2 class="video__title">Процесс производства</h2>
         <div class="video__preview">
           <a class="video__link" href="#">
@@ -82,7 +84,7 @@
           </a>
         </div>
         <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="order-link" href="#">Сделать заказ</a>
+        <a class="order-link video__button" href="#">Сделать заказ</a>
       </div>
     </main>
     <footer class="page-footer">

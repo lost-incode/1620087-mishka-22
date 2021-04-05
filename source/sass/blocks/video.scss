@@ -1,0 +1,29 @@
+.video {
+  border-top: 1px solid $basic-light;
+  border-bottom: 1px solid $basic-light;
+}
+
+.video__title {
+  margin: 0;
+  padding: 21.5px 13px 26.5px 91px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.video__img {
+  width: 260px;
+  height: 150px;
+}
+
+.video__description {
+  margin: 0;
+  padding: 35px 0 34px 41px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $basic-dark;
+}
+
+.video__button {
+  margin-bottom: 33px;
+}
