@@ -1,6 +1,7 @@
 .brand {
   position: relative;
-  padding: 164px 30px 42px 30px;
+  padding-top: 164px;
+  padding-bottom: 42px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
