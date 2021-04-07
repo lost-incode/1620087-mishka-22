@@ -12,6 +12,7 @@
         <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
       </a>
       <nav class="main-nav">
+        <div class="page__container">
         <button class="main-nav__toggle" type="button" hidden>
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -49,6 +50,7 @@
             </a>
           </div>
         </div>
+      </div>
       </nav>
       <p class="page-header__subtitle">Бесплатная доставка по России</p>
     </header>
@@ -74,8 +76,8 @@
         </ul>
       </section>
 
-      <div class="page__container">
-        <section class="brand">
+      <section class="brand">
+        <div class="page__container">
           <div class="brand__wrapper-title">
             <h2 class="brand__title">
               Вязаные корзинки
@@ -110,8 +112,9 @@
               <a class="order-link" href="#"><span class="visually-hidden">Кнопка для заказа товара недели - корзинки </span>Заказать</a>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
       <section class="features">
         <h3 class="features__title">Коротко о нас:</h3>
         <ul class="features-list">
@@ -136,36 +139,40 @@
         </ul>
       </section>
       <section class="feedback">
-        <h2 class="feedback__title">Отзывы</h2>
-        <blockquote class="blockquote feedback__blockquote">
-          <p class="blockquote__text">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-          </p>
-          <footer class="blockquote__author">
-            <cite class="blockquote__author-name">Анастасия Красильникова
-              <a class="blockquote__author-nickname" href="#">@misssssiskras</a>
-            </cite>
-          </footer>
-        </blockquote>
-        <button class="button-previous" type="button"><span class="visually-hidden">Посмотреть предыдущий отзыв</span></button>
-        <button class="button-next" type="button"><span class="visually-hidden">Посмотреть следующий отзыв</span></button>
-        <a class="feedback__button order-link" href="#">Написать</a>
+        <div class="page__container">
+          <h2 class="feedback__title">Отзывы</h2>
+          <blockquote class="blockquote feedback__blockquote">
+            <p class="blockquote__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+            <footer class="blockquote__author">
+              <cite class="blockquote__author-name">Анастасия Красильникова
+                <a class="blockquote__author-nickname" href="#">@misssssiskras</a>
+              </cite>
+            </footer>
+          </blockquote>
+          <button class="button-previous" type="button"><span class="visually-hidden">Посмотреть предыдущий отзыв</span></button>
+          <button class="button-next" type="button"><span class="visually-hidden">Посмотреть следующий отзыв</span></button>
+          <a class="feedback__button order-link" href="#">Написать</a>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__table">
-          <tr>
-            <td class="contacts__email-row">e-mail:</td>
-            <td class="contacts__email"><a class="contacts__email-link" href = "mailto: info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-          </tr>
-          <tr>
-            <td class="contacts__adress-row">адрес:</td>
-            <td class="contacts__adress">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</td>
-          </tr>
-        </table>
+        <div class="page__container">
+          <h2 class="contacts__title">Контакты</h2>
+          <table class="contacts__table">
+            <tr>
+              <td class="contacts__email-row">e-mail:</td>
+              <td class="contacts__email"><a class="contacts__email-link" href = "mailto: info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+            </tr>
+            <tr>
+              <td class="contacts__adress-row">адрес:</td>
+              <td class="contacts__adress">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</td>
+            </tr>
+          </table>
+        </div>
         <img class="page-footer__map" src="img/footer-map.png" width="320" height="454" alt="Наш магазин на карте">
         <a class="contacts__link order-link" href="#">Напишите нам</a>
       </section>
