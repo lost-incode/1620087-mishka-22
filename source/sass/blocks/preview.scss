@@ -3,18 +3,29 @@
 }
 
 .preview__title {
-  margin: 0;
+  max-width: 520px;
+  margin: 0 auto;
   text-align: center;
   padding: 73px 30px;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .preview__wrapper {
   height: 373px;
   background-color: $special-light;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    height: 746px;
+  }
 }
 
 .preview__list {
@@ -22,4 +33,10 @@
   position: absolute;
   left: 0;
   top: 300px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 627px;
+  }
 }

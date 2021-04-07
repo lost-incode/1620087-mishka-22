@@ -13,3 +13,9 @@
 .feedback__blockquote {
   margin: 0;
 }
+
+.feedback__button {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}

@@ -36,6 +36,10 @@
   color: $basic-white;
   text-decoration: none;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 119px;
+  }
 }
 
 .categories-list__text {
