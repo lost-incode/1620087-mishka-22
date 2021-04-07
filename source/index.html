@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -15,7 +16,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list main-nav__list-first site-list">
             <li class="site-list__item">
               <a class="site-link" href="catalog.html">
                 Каталог товаров
@@ -74,34 +75,40 @@
       </section>
 
       <section class="brand">
-        <h2 class="brand__title">
-          Вязаные корзинки
-        </h2>
-        <h3 class="brand__subtitle">
-          Товар недели
-        </h3>
-        <p class="brand__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
-        </p>
-        <table class="brand__table">
-          <tr>
-            <td class="brand__first-row">Цвет:</td>
-            <td>«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td  class="brand__first-row">Диаметр:</td>
-            <td>25 см</td>
-          </tr>
-          <tr>
-            <td  class="brand__first-row">Высота:</td>
-            <td>15 см</td>
-          </tr>
-        </table>
-        <div class="brand__image">
-          <img src="img/brand-img.jpg" width="260" height="315" alt="Изображение трех вязаных корзинок в руках на сером фоне">
+        <div class="brand__wrapper-title">
+          <h2 class="brand__title">
+            Вязаные корзинки
+          </h2>
+          <h3 class="brand__subtitle">
+            Товар недели
+          </h3>
         </div>
-        <p class="brand__price">Цена: 990 руб.</p>
-        <a class="order-link" href="#"><span class="visually-hidden">Кнопка для заказа товара недели - корзинки </span>Заказать</a>
+        <div class="brand__wrapper">
+          <p class="brand__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
+          </p>
+          <table class="brand__table">
+            <tr>
+              <td class="brand__first-row">Цвет:</td>
+              <td>«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td  class="brand__first-row">Диаметр:</td>
+              <td>25 см</td>
+            </tr>
+            <tr>
+              <td  class="brand__first-row">Высота:</td>
+              <td>15 см</td>
+            </tr>
+          </table>
+          <div class="brand__image">
+            <img src="img/brand-img.jpg" width="260" height="315" alt="Изображение трех вязаных корзинок в руках на сером фоне">
+          </div>
+          <div class="brand__price">
+            <p class="brand__price-title">Цена: 990 руб.</p>
+            <a class="order-link" href="#"><span class="visually-hidden">Кнопка для заказа товара недели - корзинки </span>Заказать</a>
+          </div>
+        </div>
       </section>
       <section class="features">
         <h3 class="features__title">Коротко о нас:</h3>
@@ -140,7 +147,7 @@
         </blockquote>
         <button class="button-previous" type="button"><span class="visually-hidden">Посмотреть предыдущий отзыв</span></button>
         <button class="button-next" type="button"><span class="visually-hidden">Посмотреть следующий отзыв</span></button>
-        <a class="order-link" href="#">Написать</a>
+        <a class="feedback__button order-link" href="#">Написать</a>
       </section>
     </main>
 
