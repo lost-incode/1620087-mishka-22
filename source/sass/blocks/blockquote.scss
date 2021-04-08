@@ -7,6 +7,11 @@
 
 .blockquote__text {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .blockquote__author {
@@ -19,6 +24,11 @@
   font-size: 17px;
   line-height: 24px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .blockquote__author-nickname {
