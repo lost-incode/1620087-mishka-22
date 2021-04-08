@@ -46,7 +46,6 @@
   @media (min-width: $desktop-width) {
     display: block;
   }
-
 }
 
 .contacts__table-wrapper {
@@ -57,7 +56,6 @@
   min-width: 76px;
   font-size: 14px;
   line-height: 30px;
-  min-width: 76px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -118,7 +116,7 @@
 
 .contacts__link {
   margin: 42px auto 39px auto;
-  width:100%;
+  width: 100%;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
