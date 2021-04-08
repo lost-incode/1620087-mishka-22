@@ -1,9 +1,32 @@
+.contacts {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    max-width: 350px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+
 .contacts__title {
   margin: 0;
-  padding: 0 30px;
+  padding: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .contacts__table {
@@ -13,16 +36,43 @@
   font-size: 14px;
   line-height: 30px;
   color: $basic-dark;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+
 }
 
-.contacts__email-row {
+.contacts__table-wrapper {
+  display: flex;
+}
+
+.contacts__row {
   min-width: 76px;
   font-size: 14px;
   line-height: 30px;
+  min-width: 76px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
-.contacts__adress-row {
-  min-width: 76px;
+.contacts__email {
+  @media (min-width: $tablet-width) {
+    padding-right: 25px;
+  }
+}
+
+.contacts__info {
+  margin: 0;
 }
 
 .contacts__email-link {
@@ -42,6 +92,36 @@
   color: $basic-extra-blue-hover;
 }
 
+.contacts__map {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  object-fit: cover;
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+}
+
+.contacts__link-wrapper {
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
 .contacts__link {
-  margin: 42px 30px 39px 30px;
+  margin: 42px auto 39px auto;
+  width:100%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
 }

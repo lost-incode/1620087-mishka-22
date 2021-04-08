@@ -3,20 +3,67 @@
   padding-bottom: 51px;
 }
 
+.feedback__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 175px;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+}
+
 .feedback__title {
   margin: 0;
   padding: 14px 0;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .feedback__blockquote {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+}
+
+.blockquote__author-nickname {
+  display: block;
+}
+
+.feedback__nav {
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 }
 
 .feedback__button {
   @media (min-width: $tablet-width) {
     order: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 }
