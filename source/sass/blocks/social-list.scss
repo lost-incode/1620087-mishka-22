@@ -1,0 +1,14 @@
+.social-list {
+  padding: 0;
+  min-height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px solid $basic-extra-light;
+  box-sizing: border-box;
+}
+
+.social-list__item:not(:last-child) {
+  padding-right: 41px;
+}
