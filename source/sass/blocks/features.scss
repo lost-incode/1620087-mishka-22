@@ -1,5 +1,5 @@
 .features {
-  padding: 31px 30px;
+  padding: 31px 0;
 }
 
 .features__title {
@@ -9,15 +9,31 @@
   line-height: 30px;
 }
 
-.features-list {
+.features__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto-fit, min-content);
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (max-width: 320px) {
+    grid-template-columns: 1fr;
+  }
 }
 
-.features-list__item {
+.features__item {
   padding-top: 83px;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+}
+
+.features__item:nth-of-type(2n + 2) {
+  padding-left: 100px;
+
+  @media (max-width: 320px) {
+    order: 1;
+    padding-left: 0;
+  }
 }
