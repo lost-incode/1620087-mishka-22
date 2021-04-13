@@ -141,7 +141,7 @@
     grid-row-end: 5;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 525px;
     height: 636px;
     grid-column-start: 3;
@@ -159,7 +159,7 @@
     grid-row-end: 5;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 5;
