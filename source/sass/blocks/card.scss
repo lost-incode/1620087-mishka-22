@@ -1,31 +1,81 @@
 .card {
+  display: flex;
+  flex-direction: column;
   border-bottom: 1px solid $basic-light;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width + ($desktop-width - $tablet-width)) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 57px 1fr 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 659px;
+  }
 }
 
 .card__title {
+  order: 1;
   margin: 0;
   padding: 27.5px 5px 6px 28px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width + ($desktop-width - $tablet-width)) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 .card__img {
   width: 260px;
   height: 195px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width + ($desktop-width - $tablet-width)) {
+    width: 334px;
+    height: 334px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .card__description {
+  order: 2;
   margin: 0 28px 17.5px 28px;
   font-size: 13px;
   line-height: 30px;
   color: $basic-dark;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width + ($desktop-width - $tablet-width)) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
 
 .card__price {
+  order: 3;
   margin: 22.5px 28px 26.5px 28px;
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width + ($desktop-width - $tablet-width)) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 }
