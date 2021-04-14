@@ -1,21 +1,35 @@
-.form {
-  padding: 0 30px;
-}
-
 .form__fieldset {
+  position: relative;
   margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .form__legend {
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   color: $basic-blue;
 }
 
+.form__legend-position {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 .form__list {
   margin: 0;
   padding-top: 24px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 167px;
+  }
 }
 
 .form__title {
@@ -25,4 +39,15 @@
   font-size: 14px;
   line-height: 16px;
   color: $basic-dark;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.form__submit-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

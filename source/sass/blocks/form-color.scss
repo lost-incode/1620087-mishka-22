@@ -1,11 +1,17 @@
 .form-color {
-  padding: 0;
-  border: none;
+  background-color: $special-light;
 }
 
 .form-color__list {
-  padding-left: 0;
-  list-style: none;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .form-color__item {
