@@ -2,12 +2,34 @@
   min-height: 79px;
   box-sizing: border-box;
   border-bottom: 1px solid $basic-light;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 82px 1.6fr;
+    grid-template-rows: 89px 65px;
+  }
 }
 
 .page-header__logo {
   display: block;
   text-align: center;
-  padding: 22px 30px 22px 76px;
+  // padding: 22px 30px 22px 76px;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.page-header__nav {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }
 
 .page-header__subtitle {
@@ -16,4 +38,11 @@
   font-size: 15px;
   line-height: 24px;
   color: $basic-dark;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
