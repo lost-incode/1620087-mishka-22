@@ -16,6 +16,12 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 700px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .preview__wrapper {
@@ -31,8 +37,10 @@
 .preview__list {
   margin: 0;
   position: absolute;
-  left: 0;
   top: 300px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
 
   @media (min-width: $tablet-width) {
     display: grid;
