@@ -14,7 +14,7 @@
 .page-header__logo {
   display: block;
   text-align: center;
-  // padding: 22px 30px 22px 76px;
+  padding: 22px 30px 22px 46px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
@@ -22,6 +22,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     text-align: left;
+    padding: 0;
   }
 }
 
@@ -40,6 +41,11 @@
   font-size: 15px;
   line-height: 24px;
   color: $basic-dark;
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    opacity: 0;
+  }
 
   @media (min-width: $tablet-width) {
     grid-column-start: 4;

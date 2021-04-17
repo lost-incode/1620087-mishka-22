@@ -3,7 +3,7 @@
   flex-direction: column;
   border-bottom: 1px solid $basic-light;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width + ($desktop-width - $tablet-width)) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 57px 1fr 73px;
@@ -23,7 +23,7 @@
   line-height: 24px;
   box-sizing: border-box;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width + ($desktop-width - $tablet-width)) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -35,7 +35,7 @@
   width: 260px;
   height: 195px;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width + ($desktop-width - $tablet-width)) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 334px;
     height: 334px;
     grid-column-start: 1;
@@ -57,7 +57,7 @@
   line-height: 30px;
   color: $basic-dark;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width + ($desktop-width - $tablet-width)) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -72,7 +72,7 @@
   font-size: 15px;
   line-height: 24px;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width + ($desktop-width - $tablet-width)) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
