@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 82px 1.6fr;
     grid-template-rows: 89px 65px;
+    align-items: center;
   }
 }
 
@@ -20,6 +21,7 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    text-align: left;
   }
 }
 
@@ -40,9 +42,11 @@
   color: $basic-dark;
 
   @media (min-width: $tablet-width) {
-    grid-column-start: 3;
+    grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
+    padding: 0;
+    justify-self: end;
   }
 }
