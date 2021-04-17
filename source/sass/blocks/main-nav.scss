@@ -1,6 +1,5 @@
 .main-nav__wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
 
   @media (min-width: $tablet-width) {
