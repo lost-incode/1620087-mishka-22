@@ -1,4 +1,8 @@
 .contacts {
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,19 +17,51 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+    padding-left: 174px;
   }
 }
 
 .contacts__title {
+  position: relative;
   margin: 0;
   padding: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 46px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 47px;
+      height: 81px;
+      right: 0;
+      top: 0;
+      background-image: url("../img/flag.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 79px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 47px;
+      height: 81px;
+      left: -111px;
+      top: 40px;
+      background-image: url("../img/flag.svg");
+    }
   }
 }
 
@@ -45,6 +81,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    padding-top: 34.5px;
   }
 }
 
@@ -111,6 +148,8 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
+    align-self: flex-end;
+    padding-left: 174px;
   }
 }
 
@@ -121,5 +160,9 @@
 
   @media (min-width: $tablet-width) {
     width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
