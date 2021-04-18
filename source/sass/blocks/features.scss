@@ -28,12 +28,13 @@
 .features__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
   grid-template-rows: repeat(auto-fit, min-content);
   margin: 0;
   padding: 0;
   list-style: none;
 
-  @media (max-width: 320px) {
+  @media (max-width: $tablet-width - 1px) {
     grid-template-columns: 1fr;
   }
 }
@@ -46,8 +47,6 @@
 }
 
 .features__item:nth-of-type(2n + 2) {
-  padding-left: 100px;
-
   @media (max-width: 320px) {
     order: 1;
     padding-left: 0;
