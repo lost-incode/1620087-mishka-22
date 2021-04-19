@@ -11,6 +11,12 @@
   box-sizing: border-box;
 }
 
+.form-info__label-bg {
+  & span {
+    background-color: $special-light;
+  }
+}
+
 .form-info__label-center {
   @media (min-width: $tablet-width) {
     display: grid;
