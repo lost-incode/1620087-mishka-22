@@ -19,8 +19,11 @@
 }
 
 .form-color__legend {
-  padding-top: 7px;
-  padding-bottom: 25px;
+  // padding-top: 7px;
+  // padding-bottom: 25px;
+  & span {
+    background-color: $special-light;
+  }
 }
 
 .form-color__label {
