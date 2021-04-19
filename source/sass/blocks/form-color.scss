@@ -1,5 +1,7 @@
 .form-color {
-  background-color: $special-light;
+  @media (min-width: $tablet-width) {
+    background-color: $special-light;
+  }
 }
 
 .form-color__list {
@@ -21,9 +23,6 @@
 .form-color__legend {
   // padding-top: 7px;
   // padding-bottom: 25px;
-  & span {
-    background-color: $special-light;
-  }
 }
 
 .form-color__label {
