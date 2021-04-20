@@ -71,10 +71,10 @@
         <h2 class="visually-hidden">Форма для оформления заказа</h2>
         <form class="form" method="get" action="https://echo.htmlacademy.ru">
           <div class="page__container">
-            <fieldset class="form__fieldset form-type">
-              <legend class="form__legend form__legend-position">
+            <div class="form__fieldset form__fieldset--grid form-type" role="group" aria-labelledby="legend-type">
+              <div class="form__legend form__legend-position" id="legend-type">
                 <span>Тип</span>
-              </legend>
+              </div>
               <ul class="form__list">
                 <li class="form-type__item">
                   <input class="form-type__radio visually-hidden" type="radio" name="order-type" id="type-accessory" value="accessory" checked>
@@ -85,13 +85,13 @@
                   <label class="form-type__label" for="type-toy">Детская игрушка</label>
                 </li>
               </ul>
-            </fieldset>
+            </div>
           </div>
-          <fieldset class="form__fieldset form-color">
-            <div class="page__container">
-              <legend class="form__legend form__legend-position form-color__legend">
+          <div class="form__fieldset form-color" role="group" aria-labelledby="legend-color">
+            <div class="page__container form__fieldset--grid">
+              <div class="form__legend form__legend-position form-color__legend" id="legend-color">
                 <span>Цвет</span>
-              </legend>
+              </div>
               <ul class="form__list form-color__list">
                 <li class="form-color__item">
                   <input class="form-color__checkbox visually-hidden" type="checkbox" name="color" value="white" id="white" checked>
@@ -119,35 +119,35 @@
                 </li>
               </ul>
             </div>
-          </fieldset>
+          </div>
           <div class="page__container">
-            <fieldset class="form__fieldset form-name">
-              <legend class="form__legend form__legend-position form-name__legend">
+            <div class="form__fieldset form__fieldset--grid form-name" role="group" aria-labelledby="legend-name">
+              <div class="form__legend form__legend-position form-name__legend" id="legend-name">
                 <span>ФИО</span>
-              </legend>
+              </div>
               <ul class="form__list  form-name__list">
                 <li class="form-name__item">
-                  <label class="form-name__label">Имя:<input class="form-name__input" type="text" name="first-name" placeholder="Введите ваше имя*"></label>
+                  <label class="form-name__label">Имя:<input class="form__input form-name__input" type="text" name="first-name" placeholder="Введите ваше имя*"></label>
                 </li>
                 <li class="form-name__item">
-                  <label class="form-name__label">Фамилия:<input class="form-name__input" type="text" name="surname" placeholder="Укажите фамилию*"></label>
+                  <label class="form-name__label">Фамилия:<input class="form__input form-name__input" type="text" name="surname" placeholder="Укажите фамилию*"></label>
                 </li>
                 <li class="form-name__item">
-                  <label class="form-name__label">Отчество:<input class="form-name__input" type="text" name="last-name" placeholder="Отчество, если желаете"></label>
+                  <label class="form-name__label">Отчество:<input class="form__input form-name__input" type="text" name="last-name" placeholder="Отчество, если желаете"></label>
                 </li>
               </ul>
-            </fieldset>
+            </div>
           </div>
-          <fieldset class="form__fieldset form-info">
+          <div class="form-info">
             <div class="form-info__wrapper">
               <div class="page__container">
-                <label class="form__legend form-info__labelform-info__label-center">
+                <label class="form__legend form-info__label form-info__label-center">
                   <span>Тел</span>
-                  <input class="form-info__input" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                  <input class="form__input form-info__input" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                 </label>
                 <label class="form__legend form-info__label form-info__label-center">
                   <span>E-mail</span>
-                  <input class="form-info__input" type="text" name="email" placeholder="Ваш Email*">
+                  <input class="form__input form-info__input" type="text" name="email" placeholder="Ваш Email*">
                 </label>
               </div>
             </div>
@@ -157,7 +157,7 @@
                 <textarea class="form-info__textarea"  name="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </label>
             </div>
-          </fieldset>
+          </div>
           <div class="page__container form__submit-wrapper">
             <p class="form__title">*Поля обязательны для заполнения</p>
             <button class="order-link form__button" type="submit">

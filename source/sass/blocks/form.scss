@@ -3,6 +3,23 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.form__fieldset--grid {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
 }
 
 .form__legend {
@@ -13,41 +30,76 @@
   color: $basic-blue;
 
   @media (max-width: $tablet-width - 1px) {
-    position: relative;
     width: 100%;
-    display: flex;
 
     & span {
       display: flex;
-      width: max-content;
-      padding-right: 15px;
-      // background-color: $basic-white;
-      // position: absolute;
-      // top: 0;
-      // left: 0;
     }
 
     & span::after {
       content: "";
       display: flex;
-      position: absolute;
+      align-self: center;
       flex-grow: 1;
       flex-shrink: 1;
+      margin-left: 20px;
       height: 1px;
       width: 60%;
-      top: 7.5px;
-      right: 0;
       background-color: $special-extra-blue;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
+  }
 }
 
-.form__legend-position {
+// .form__legend-position {
+//   @media (min-width: $tablet-width) {
+//     position: absolute;
+//     top: 66px;
+//     left: 0;
+//   }
+// }
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 16px 18px 18px 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 18px;
+  color: $basic-dark;
+  border: none;
+  border-bottom: 2px solid $basic-black;
+  box-sizing: border-box;
+  background-color: transparent;
+
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    left: 0;
+    padding-left: 16px;
   }
+}
+
+.form__input:hover,
+.form__input:active {
+  border-bottom: 2px solid $special-extra-blue;
+}
+
+.form__input::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .form__list {
@@ -58,7 +110,6 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-left: 167px;
   }
 }
 
