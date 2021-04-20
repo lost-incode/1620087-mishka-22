@@ -60,7 +60,6 @@
     width: 25px;
     height: 24px;
     background-color: $input-icon-color;
-    -webkit-mask-image: url("../img/phone.svg");
     mask-image: url("../img/phone.svg");
 
     @media (min-width: $tablet-width) {
@@ -87,7 +86,6 @@
     width: 32px;
     height: 21px;
     background-color: $input-icon-color;
-    -webkit-mask-image: url("../img/mail.svg");
     mask-image: url("../img/mail.svg");
 
     @media (min-width: $tablet-width) {
