@@ -1,6 +1,8 @@
 .form-info__wrapper {
   @media (min-width: $tablet-width) {
     background-color: $special-light;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -37,39 +39,6 @@
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
   }
-}
-
-.form-info__input {
-  display: block;
-  padding: 16px 18px 18px 16px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 19px;
-  line-height: 18px;
-  color: $basic-dark;
-  border: none;
-  border-bottom: 2px solid $basic-black;
-  box-sizing: border-box;
-  background-color: transparent;
-}
-
-.form-info__input:hover,
-.form-info__input:active {
-  border-bottom: 2px solid $special-extra-blue;
-}
-
-.form-info__input::placeholder,
-.form-info__textarea::placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 18px;
-}
-
-.form-info__input:focus::placeholder,
-.form-info__textarea:focus::placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .form-info__textarea {

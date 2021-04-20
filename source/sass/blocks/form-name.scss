@@ -3,13 +3,17 @@
   // padding-top: 10px;
   // padding-bottom: 20px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
 }
 
 .form-name__list {
   list-style: none;
 
   @media (min-width: $desktop-width) {
-    padding-right: 167px;
+    padding-right: 174px;
   }
 }
 
@@ -28,37 +32,8 @@
 }
 
 .form-name__input {
-  display: block;
-  padding: 16px 18px 18px 16px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 19px;
-  line-height: 18px;
-  color: $basic-dark;
-  border: none;
-  border-bottom: 2px solid $basic-black;
-  box-sizing: border-box;
-
-
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-left: 25px;
   }
-}
-
-.form-name__input:hover,
-.form-name__input:active {
-  border-bottom: 2px solid $special-extra-blue;
-}
-
-.form-name__input::placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 18px;
-}
-
-.form-name__input:focus::placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
