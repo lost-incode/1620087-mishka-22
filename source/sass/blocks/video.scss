@@ -7,11 +7,13 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 4fr 2fr;
+    column-gap: 79px;
     grid-template-rows: 1fr 1fr 1fr;
   }
 }
 
 .video__title {
+  position: relative;
   align-self: flex-start;
   margin: 0;
   padding: 21.5px 13px 26.5px 91px;
@@ -21,13 +23,39 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
+    padding: 41px 13px 25px 107px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 96px 110px 27.5px 0;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 34px;
+    top: 35px;
+    width: 32px;
+    height: 22px;
+    background-color: $basic-blue;
+    mask-image: url("../img/video.svg");
+
+    @media (min-width: $tablet-width) {
+      left: 42px;
+      top: 39px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+      top: 47px;
+    }
   }
 }
 
