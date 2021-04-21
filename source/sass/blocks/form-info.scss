@@ -107,6 +107,14 @@
   background-color: $basic-blue;
 }
 
+.form-info__input {
+  padding-right: 37px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    padding-right: 57px;
+  }
+}
+
 .form-info__textarea {
   min-height: 142px;
   margin-top: 22.5px;
