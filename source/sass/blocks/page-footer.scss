@@ -42,10 +42,10 @@
   mask-image: url("../img/logo-footer-academy.svg");
 }
 
-.page-footer__link:hover:after {
+.page-footer__link:hover::after {
   background-color: $basic-extra-blue-hover;
 }
 
-.page-footer__link:active:after {
+.page-footer__link:active::after {
   background-color: $social-icon-active;
 }
