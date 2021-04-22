@@ -7,8 +7,53 @@
   list-style: none;
   border-bottom: 1px solid $basic-extra-light;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
-.social-list__item:not(:last-child) {
-  padding-right: 41px;
+.social-list__item {
+  display: block;
+  width: 23px;
+  height: 28px;
+
+  &:not(:last-child) {
+    margin-right: 41px;
+  }
+}
+
+.social-list__link {
+  position: relative;
+}
+
+.social-list__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 23px;
+  height: 28px;
+  background-color: $social-icon-color;
+}
+
+.social-list__link:hover::after {
+  background-color: $basic-extra-blue-hover;
+}
+
+.social-list__link:active::after {
+  background-color: $social-icon-active;
+}
+
+.social-list__link--insta::after {
+  mask-image: url("../img/insta.svg");
+}
+
+.social-list__link--fb::after {
+  mask-image: url("../img/fb.svg");
+}
+
+.social-list__link--tw::after {
+  mask-image: url("../img/twitter.svg");
 }
