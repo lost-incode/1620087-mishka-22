@@ -67,6 +67,8 @@
 
 .card__price {
   order: 3;
+  display: flex;
+  justify-content: space-between;
   margin: 22.5px 28px 26.5px 28px;
   font-weight: bold;
   font-size: 15px;
@@ -78,4 +80,40 @@
     grid-row-start: 3;
     grid-row-end: 4;
   }
+}
+
+.card__link {
+  position: relative;
+  width: 20px;
+  height: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 21px;
+    height: 18px;
+  }
+}
+
+.card__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 19px;
+  background-color: $special-icon-gray;
+  mask-image: url("../img/cart.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 21px;
+    height: 18px;
+  }
+}
+
+.card__link:hover::after {
+  background-color: $basic-blue;
+}
+
+.card__link:active::after {
+  background-color: $icon-menu-blue-active;
 }
