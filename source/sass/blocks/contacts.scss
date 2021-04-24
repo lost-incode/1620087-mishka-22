@@ -135,15 +135,15 @@
   object-fit: cover;
 
 
-    @media (max-width: $desktop-width - 1px) {
-      margin: 0;
+  @media (max-width: $desktop-width - 1px) {
+    margin: 0;
 
-      &-image {
-        display: block;
-        width: max-content;
-        margin: 0;
-      }
+    &-image {
+      display: block;
+      width: max-content;
+      margin: 0;
     }
+  }
 
   @media (min-width: $desktop-width) {
     width: 527px;
