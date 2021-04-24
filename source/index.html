@@ -181,7 +181,11 @@
             </div>
           </dl>
         </div>
-        <img class="contacts__map" src="img/footer-map.png" width="320" height="454" alt="Наш магазин на карте">
+        <picture class="contacts__map">
+          <source media="(min-width: 1150px)" srcset="img/index/map-desktop@1x.png 1x, img/index/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index/map-tablet@1x.png 1x, img/index/map-tablet@2x.png 2x">
+          <img class="contacts__map-image" src="img/index/map-mobile@1x.png" srcset="img/index/map-mobile@2x.png 2x" alt="Наш магазин на карте">
+        </picture>
         <div class="contacts__link-wrapper">
           <a class="contacts__link order-link" href="#">Напишите нам</a>
         </div>
