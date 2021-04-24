@@ -1,6 +1,30 @@
 .feedback {
   padding-top: 13px;
   padding-bottom: 51px;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 350px;
+      height: 457px;
+      z-index: -1;
+      left: 0;
+      // top: 0;
+      background-image: url("../img/index/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center -19px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/review@2x.jpg");
+      }
+    }
+  }
 }
 
 .feedback__wrapper {
