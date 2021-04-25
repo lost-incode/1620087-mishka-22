@@ -13,7 +13,6 @@
 }
 
 .page__container {
-  // position: relative;
   width: 260px;
   margin: 0 auto;
 
@@ -23,5 +22,17 @@
 
   @media (min-width: $desktop-width) {
     width: 1050px;
+  }
+
+  &--desktop_on {
+    @media (max-width: $desktop-width - 1px) {
+      display: contents;
+    }
+  }
+
+  &--desktop_off {
+    @media (min-width: $desktop-width) {
+      display: contents;
+    }
   }
 }
