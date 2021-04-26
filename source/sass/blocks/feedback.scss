@@ -1,12 +1,12 @@
 .feedback {
-  padding-top: 13px;
-  padding-bottom: 51px;
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-  }
+  padding-top: 58px;
+  padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 82.5px;
+    padding-bottom: 47px;
+    margin-bottom: 85px;
+
     &::before {
       content: "";
       display: block;
@@ -15,16 +15,26 @@
       height: 457px;
       z-index: -1;
       left: 0;
-      // top: 0;
       background-image: url("../img/index/review@1x.jpg");
       background-repeat: no-repeat;
-      background-position: center -19px;
+      background-position: center;
       background-size: 350px auto;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/index/review@2x.jpg");
       }
+
+      @media (min-width: $desktop-width) {
+        top: 0;
+      }
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-top: 78px;
+    padding-bottom: 96px;
+    margin-bottom: 67px;
   }
 }
 
