@@ -61,7 +61,13 @@
         <ul class="catalog page-main__list">
           <li class="catalog__card card">
             <h2 class="card__title">Зайчик-попрыгайчик</h2>
-            <img class="card__img" src="img/catalog/photo2.jpg" width="260" height="195" alt="Изображение вязаного зайчика в голубом костюме">
+            <div class="card__image-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/photo-1-desktop@1x.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet@1x.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/catalog/photo-1-mobile@1x.jpg" srcset="img/index/photo-1-mobile@2x.jpg 2x" alt="Изображение вязаного зайчика в голубом костюме">
+              </picture>
+            </div>
             <p class="card__description">Рост 30 см, вес 200 г</p>
             <p class="card__price">1 200 руб.
               <a class="card__link basket__link" href="#">
@@ -71,7 +77,13 @@
           </li>
           <li class="catalog__card card">
             <h2 class="card__title">Корзинка для белья</h2>
-            <img class="card__img" src="img/catalog/photo3.jpg" width="260" height="195" alt="Изображение вязаной бело-розовой корзинки с полотенцами внутри">
+            <div class="card__image-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/photo-2-desktop@1x.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet@1x.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/catalog/photo-2-mobile@1x.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Изображение вязаной бело-розовой корзинки с полотенцами внутри">
+              </picture>
+            </div>
             <p class="card__description">Диаметр 15 см, высота 10 см</p>
             <p class="card__price">
               690 руб.
@@ -82,7 +94,13 @@
           </li>
           <li class="catalog__card card">
             <h2 class="card__title">Большая корзинка для игрушек</h2>
-            <img class="card__img" src="img/catalog/photo1.jpg" width="260" height="195" alt="Изображение вязаной бело-зеленой корзинки с детскими игрушками внутри">
+            <div class="card__image-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/photo-3-desktop@1x.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet@1x.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/catalog/photo-3-mobile@1x.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Изображение вязаной бело-зеленой корзинки с детскими игрушками внутри">
+              </picture>
+            </div>
             <p class="card__description">Диаметр 30 см, высота 30 см</p>
             <p class="card__price">1 500 руб.
               <a class="card__link basket__link" href="#">
@@ -95,7 +113,11 @@
           <h2 class="video__title">Процесс производства</h2>
           <div class="video__preview">
             <a class="video__link" href="#">
-              <img class="video__img" src="img/catalog/video-preview.jpg" width="260" height="150" alt="Изображение вязаной серо-зеленой корзинки">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/video-desktop@1x.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/video-tablet@1x.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+                <img class="video__image" src="img/catalog/video-mobile@1x.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Изображение вязаной серо-зеленой корзинки">
+              </picture>
             </a>
           </div>
           <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
