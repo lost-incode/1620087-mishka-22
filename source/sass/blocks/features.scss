@@ -10,11 +10,13 @@
 
 .features__title {
   margin: 0;
+  margin-bottom: 28px;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -40,10 +42,16 @@
 }
 
 .features__item {
-  padding-top: 83px;
+  position: relative;
+  padding-top: 53px;
+  padding-bottom: 30px;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
 }
 
 .features__item:nth-of-type(2n + 2) {
@@ -51,4 +59,10 @@
     order: 1;
     padding-left: 0;
   }
+}
+
+.features__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
