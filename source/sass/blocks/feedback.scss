@@ -160,20 +160,35 @@
 .feedback__button-previous::before,
 .feedback__button-next::before {
   content: "";
+  cursor: pointer;
   position: absolute;
   display: block;
   width: 50px;
   height: 26px;
   top: 0;
   left: 0;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: 50% 50%;
+  background-color: $basic-black;
+}
+
+.feedback__button-previous:hover::before,
+.feedback__button-next:hover::before {
+  background-color: $logo-hover;
+}
+
+.feedback__button-previous:active::before,
+.feedback__button-next:active::before {
+  background-color: $logo-active;
 }
 
 .feedback__button-previous::before {
-  background-image: url("../img/arrow-left.svg");
+  mask-image: url("../img/stack.svg#previous");
 }
 
 .feedback__button-next::before {
-  background-image: url("../img/arrow-right.svg");
+  mask-image: url("../img/stack.svg#next");
 }
 
 .feedback__button {

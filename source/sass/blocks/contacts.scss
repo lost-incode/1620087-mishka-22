@@ -43,7 +43,10 @@
       height: 81px;
       right: 0;
       top: 0;
-      background-image: url("../img/flag.svg");
+      background-image: url("../img/stack.svg#flag");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 0;
     }
   }
 
@@ -53,14 +56,8 @@
     padding-top: 79px;
 
     &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 47px;
-      height: 81px;
       left: -111px;
       top: 40px;
-      background-image: url("../img/flag.svg");
     }
   }
 }
