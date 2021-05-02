@@ -13,6 +13,12 @@
   font-size: 17px;
   line-height: 18px;
   box-sizing: border-box;
+
+  &::after {
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: 50% 50%;
+  }
 }
 
 .form-info__label-center {
@@ -60,7 +66,7 @@
     width: 25px;
     height: 24px;
     background-color: $input-icon-color;
-    mask-image: url("../img/phone.svg");
+    mask-image: url("../img/stack.svg#icon-phone");
 
     @media (min-width: $tablet-width) {
       right: 26px;
@@ -86,7 +92,7 @@
     width: 32px;
     height: 21px;
     background-color: $input-icon-color;
-    mask-image: url("../img/mail.svg");
+    mask-image: url("../img/stack.svg#icon-email");
 
     @media (min-width: $tablet-width) {
       right: 22px;
