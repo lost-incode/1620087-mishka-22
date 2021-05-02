@@ -231,12 +231,24 @@
 }
 
 .main-nav__link-basket::before {
+  position: absolute;
   content: "";
   display: block;
-  position: absolute;
   top: 0;
   left: 0;
   width: 21px;
   height: 18px;
-  background-image: url("../img/cart.svg");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: 50% 50%;
+  mask-image: url("../img/stack.svg#icon-cart");
+  background-color: $special-icon-gray;
+}
+
+.main-nav__link-basket:hover::before {
+  background-color: $basic-blue;
+}
+
+.main-nav__link-basket:active::before {
+  background-color: $icon-menu-blue-active;
 }
