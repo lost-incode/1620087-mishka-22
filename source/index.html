@@ -199,7 +199,13 @@
 
     <footer class="page-footer">
       <div class="info">
-        <img class="info__logo" src="img/logo-footer.svg" width="102" height="34" alt="Логотип сайта Мишка">
+        <!-- <img class="info__logo" src="img/logo-footer.svg" width="102" height="34" alt="Логотип сайта Мишка"> -->
+        <a class="info__link" href="index.html">
+          <span class="visually-hidden">Логотип сайта Мишка</span>
+          <svg class="info__logo" width="102" height="34">
+            <use xlink:href="img/stack.svg#mishka-logo-footer"></use>
+          </svg>
+        </a>
         <ul class="info__list social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--insta" href="#">
