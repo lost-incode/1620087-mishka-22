@@ -11,11 +11,18 @@
   }
 }
 
-.info__logo {
-  display: none;
+.info__link:hover .info__logo {
+  fill: $basic-extra-blue-hover;
+}
 
-  @media (min-width: $tablet-width) {
-    display: block;
+.info__link:active .info__logo {
+  fill: $social-icon-active;
+}
+
+.info__logo {
+  @media (max-width: $tablet-width - 1px) {
+    position: fixed;
+    transform: scale(0);
   }
 }
 
