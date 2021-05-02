@@ -1,0 +1,11 @@
+.link-search__icon {
+  fill: $special-icon-gray;
+}
+
+.link-search:hover .link-search__icon {
+  fill: $basic-blue;
+}
+
+.link-search:active .link-search__icon {
+  fill: $icon-menu-blue-active;
+}
