@@ -9,8 +9,17 @@
   <body class="page__body">
     <div class="page__container">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
+      <a class="page-header__logo-link">
+        <span class="visually-hidden">Логотип сайта Мишка</span>
+        <svg class="page-header__logo page-header__logo--mobile" width="86" height="35">
+          <use xlink:href="img/logo-header.svg#mobile"></use>
+        </svg>
+        <svg class="page-header__logo page-header__logo--tablet" width="113" height="46">
+          <use xlink:href="img/logo-header.svg#tablet"></use>
+        </svg>
+        <svg class="page-header__logo page-header__logo--desktop" width="149" height="72">
+          <use xlink:href="img/logo-header.svg#desktop"></use>
+        </svg>
       </a>
       <nav class="page-header__nav main-nav--closed main-nav">
         <button class="main-nav__toggle" type="button" hidden>
@@ -199,7 +208,7 @@
         <a class="info__link" href="index.html">
           <span class="visually-hidden">Логотип сайта Мишка</span>
           <svg class="info__logo" width="102" height="34">
-            <use xlink:href="img/stack.svg#mishka-logo-footer"></use>
+            <use xlink:href="img/logo-header.svg#logotype"></use>
           </svg>
         </a>
         <ul class="info__list social-list">
