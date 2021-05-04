@@ -46,6 +46,10 @@
   border: 2px solid $basic-dark;
 }
 
+.form-color__checkbox:focus + .form-color__label {
+  outline: thin dotted;
+}
+
 .form-color__checkbox:hover + .form-color__label::before {
   border-color: $special-extra-blue;
 }
