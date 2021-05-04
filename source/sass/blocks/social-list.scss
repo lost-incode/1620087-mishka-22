@@ -23,16 +23,9 @@
   }
 }
 
-.social-list__link {
-  position: relative;
-}
-
 .social-list__link::after {
   content: "";
   display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 23px;
   height: 28px;
   background-color: $social-icon-color;
