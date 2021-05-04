@@ -197,8 +197,8 @@
     justify-self: center;
 
     span {
-      position: absolute;
-      opacity: 0;
+      position: fixed;
+      transform: scale(0);
     }
   }
 
@@ -208,6 +208,18 @@
     grid-row-start: 1;
     grid-row-end: 2;
   }
+}
+
+.main-nav__link-search::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: 50% 50%;
+  mask-image: url("../img/stack.svg#icon-search");
+  background-color: $special-icon-gray;
 }
 
 .main-nav__link-basket {
@@ -245,10 +257,12 @@
   background-color: $special-icon-gray;
 }
 
-.main-nav__link-basket:hover::before {
+.main-nav__link-basket:hover::before,
+.main-nav__link-search:hover::before {
   background-color: $basic-blue;
 }
 
-.main-nav__link-basket:active::before {
+.main-nav__link-basket:active::before,
+.main-nav__link-search:active::before {
   background-color: $icon-menu-blue-active;
 }
