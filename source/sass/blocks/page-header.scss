@@ -42,49 +42,29 @@
 }
 
 .page-header__logo {
-  color: $basic-black;
-
-  &:hover {
-    color: $logo-hover;
-  }
-
-  &:active {
-    color: $logo-active;
-  }
-}
-
-.page-header__logo--mobile {
-  display: none;
-  fill: $basic-black;
-
   @media (max-width: $tablet-width - 1px) {
-    display: block;
+    width: 86px;
+    height: 35px;
     margin: 0 auto;
   }
 
-  &:hover {
-    fill: $logo-hover;
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
   }
-
-  &:active {
-    fill: $logo-active;
-  }
-}
-
-.page-header__logo--tablet {
-  display: none;
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-    display: block;
-  }
-}
-
-.page-header__logo--desktop {
-  display: none;
 
   @media (min-width: $desktop-width) {
-    display: block;
+    width: 149px;
+    height: 72px;
     margin: 0 auto;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
