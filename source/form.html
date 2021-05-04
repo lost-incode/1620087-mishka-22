@@ -9,8 +9,12 @@
   <body class="page__body">
     <div class="page__container">
       <header class="page-header">
-        <a class="page-header__logo" href="index.html">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
+        <a class="page-header__logo-link" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-header.svg#desktop">
+            <source media="(min-width: 768px)" srcset="img/logo-header.svg#tablet">
+            <img class="page-header__logo" src="img/logo-header.svg#mobile" alt="Логотип сайта Мишка">
+          </picture>
         </a>
         <nav class="page-header__nav main-nav--closed main-nav">
           <button class="main-nav__toggle" type="button" hidden>
