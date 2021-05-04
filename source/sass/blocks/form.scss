@@ -97,6 +97,10 @@
   border-bottom: 2px solid $special-extra-blue;
 }
 
+.form__input:focus-visible {
+  outline: none;
+}
+
 .form__input::placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
