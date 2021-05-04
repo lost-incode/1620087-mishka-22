@@ -10,16 +10,11 @@
     <div class="page__container">
     <header class="page-header">
       <a class="page-header__logo-link">
-        <span class="visually-hidden">Логотип сайта Мишка</span>
-        <svg class="page-header__logo page-header__logo--mobile" width="86" height="35">
-          <use xlink:href="img/logo-header.svg#mobile"></use>
-        </svg>
-        <svg class="page-header__logo page-header__logo--tablet" width="113" height="46">
-          <use xlink:href="img/logo-header.svg#tablet"></use>
-        </svg>
-        <svg class="page-header__logo page-header__logo--desktop" width="149" height="72">
-          <use xlink:href="img/logo-header.svg#desktop"></use>
-        </svg>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-header.svg#desktop">
+          <source media="(min-width: 768px)" srcset="img/logo-header.svg#tablet">
+          <img class="page-header__logo" src="img/logo-header.svg#mobile" alt="Логотип сайта Мишка">
+        </picture>
       </a>
       <nav class="page-header__nav main-nav--closed main-nav">
         <button class="main-nav__toggle" type="button" hidden>
