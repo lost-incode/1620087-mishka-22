@@ -22,6 +22,7 @@
   display: block;
   text-align: center;
   padding: 22px 30px 22px 46px;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
