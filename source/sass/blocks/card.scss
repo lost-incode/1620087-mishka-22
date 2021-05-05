@@ -18,9 +18,6 @@
   order: 1;
   margin: 0;
   padding: 27.5px 5px 6px 28px;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -28,6 +25,22 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+  }
+}
+
+.card__title-link {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $basic-black;
+  text-decoration: none;
+
+  &:hover {
+    color: $special-dark-hover;
+  }
+
+  &:active {
+    color: $special-dark-active;
   }
 }
 
