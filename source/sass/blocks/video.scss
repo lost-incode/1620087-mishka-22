@@ -75,32 +75,29 @@
 }
 
 .video__link {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 101px;
+  height: 77px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../img/stack.svg#icon-video-play");
+
   @media (min-width: $tablet-width) {
     padding: 0;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    width: 101px;
-    height: 77px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-image: url("../img/stack.svg#icon-video-play");
-  }
 }
 
-.video__link:hover::after {
+.video__link:hover {
   width: 121px;
   height: 92px;
 }
 
-.video__link:active::after {
+.video__link:active {
   width: 81px;
   height: 62px;
   opacity: 0.3;
