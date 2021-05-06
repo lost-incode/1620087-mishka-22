@@ -14,11 +14,11 @@
   mask-size: cover;
   mask-image: url("../img/icons/zigzag-gray.svg");
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $mobile-width + 1px) {
     height: 17px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width + 1px) {
     height: 23px;
   }
 }
