@@ -1,5 +1,30 @@
 .brand {
   position: relative;
+}
+
+.brand::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: $special-light;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-image: url("../img/icons/zigzag-gray.svg");
+
+  @media (min-width: $tablet-width) {
+    height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 23px;
+  }
+}
+
+.brand__wrapper {
+  position: relative;
   padding-top: 164px;
   padding-bottom: 42px;
   box-sizing: border-box;
