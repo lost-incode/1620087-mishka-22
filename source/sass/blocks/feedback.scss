@@ -69,7 +69,8 @@
     background-color: $special-light;
     mask-repeat: no-repeat;
     mask-size: cover;
-    mask-image: url("../img/icons/zigzag-gray.svg");
+    mask-position: 50% 50%;
+    mask-image: url("../img/stack.svg#zigzag-gray");
   }
 
   @media (min-width: $tablet-width + 1px) {
