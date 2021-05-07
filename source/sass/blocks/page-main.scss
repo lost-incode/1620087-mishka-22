@@ -15,10 +15,12 @@
       background-color: $basic-white;
       mask-repeat: no-repeat;
       mask-size: cover;
-      mask-image: url("../img/icons/zigzag-white.svg");
+      mask-position: center center;
+      mask-image: url("../img/stack.svg#zigzag-white");
 
-      @media (min-width: $desktop-width) {
-        height: 34px;
+      @media (min-width: $tablet-width + 1px) {
+        bottom: -6px;
+        height: 39px;
       }
     }
   }

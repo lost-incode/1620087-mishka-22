@@ -3,7 +3,7 @@
   flex-direction: column;
   border-bottom: 1px solid $basic-light;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 57px 1fr 73px;

@@ -64,8 +64,9 @@
     height: 24px;
     background-color: $basic-white;
     mask-repeat: no-repeat;
+    mask-position: 50% 50%;
     mask-size: cover;
-    mask-image: url("../img/icons/zigzag-white.svg");
+    mask-image: url("../img/stack.svg#zigzag-white");
     z-index: 2;
 
     @media (min-width: $tablet-width + 1px) {
