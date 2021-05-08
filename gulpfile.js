@@ -74,7 +74,7 @@ exports.svgstack = svgstack;
 // Images
 
 const optimizeImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  return gulp.src("source/img/**/*.{jpg,png,svg}", "!source/img/icons/**/*.svg")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
@@ -86,7 +86,7 @@ const optimizeImages = () => {
 exports.images = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  return gulp.src("source/img/**/*.{jpg,png,svg}", "!source/img/icons/**/*.svg")
     .pipe(gulp.dest("build/img"));
 }
 
@@ -115,6 +115,7 @@ const copy = (done) => {
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.{jpg,png,svg}",
+    "!source/img/icons/**/*.svg",
   ], {
     base: "source"
   })
