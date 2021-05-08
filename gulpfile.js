@@ -166,10 +166,6 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
 }
 
-exports.default = gulp.series(
-  styles, svgstack, server, watcher
-);
-
 //Default
 
 exports.default = gulp.series(
