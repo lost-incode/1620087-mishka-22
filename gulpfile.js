@@ -158,12 +158,20 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reload
+
+const reload = (done) => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/img/icons/**/*.svg", gulp.series("svgstack"));
-  gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/img/icons/**/*.svg", gulp.series(svgstack, reload));
+  gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch("source/js/*.js", gulp.series(scripts, reload));
 }
 
 //Default
