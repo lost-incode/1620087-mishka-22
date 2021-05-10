@@ -33,7 +33,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
     padding-top: 39.5px;
     padding-bottom: 69px;
   }
