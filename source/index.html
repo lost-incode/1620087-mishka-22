@@ -125,7 +125,7 @@
               </div>
               <div class="brand__price">
                 <p class="brand__price-title">Цена: 990 руб.</p>
-                <a class="order-link" href="modal.html"><span class="visually-hidden">Кнопка для заказа товара недели - корзинки </span>Заказать</a>
+                <a class="order-link cart-link" href="modal.html"><span class="visually-hidden">Кнопка для заказа товара недели - корзинки </span>Заказать</a>
               </div>
             </div>
           </div>
@@ -215,6 +215,37 @@
         </div>
       </section>
     </main>
+
+  <div class="modal__wrapper modal--close">
+    <div class="modal modal--window">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__subtitle">Выберите размер:</p>
+      <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
+        <div class="modal__form-size" role="group" aria-labelledby="legend-size">
+          <div class="modal__legend" id="legend-size">
+            <span class="visually-hidden">Размер</span>
+          </div>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <input class="modal__radio visually-hidden" type="radio" name="order-size" id="small" value="small" checked>
+              <label class="modal__label" for="small">S</label>
+            </li>
+            <li class="modal__item">
+              <input class="modal__radio visually-hidden" type="radio" name="order-size" id="middle" value="middle">
+              <label class="modal__label" for="middle">M</label>
+            </li>
+            <li class="modal__item">
+              <input class="modal__radio visually-hidden" type="radio" name="order-size" id="large" value="large">
+              <label class="modal__label" for="large">L</label>
+            </li>
+          </ul>
+        </div>
+        <button class="modal__button" type="submit">
+          Добавить
+        </button>
+      </form>
+    </div>
+  </div>
 
     <footer class="page-footer">
       <div class="info page__container">
