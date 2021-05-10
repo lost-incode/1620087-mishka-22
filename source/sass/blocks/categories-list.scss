@@ -15,7 +15,11 @@
 }
 
 .categories-list__item {
-  height: 103px;
+  min-height: 103px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 119px;
+  }
 }
 
 // .categories-list__item--interior {
@@ -38,7 +42,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    min-height: 119px;
+    height: 100%;
   }
 
   &::after {
