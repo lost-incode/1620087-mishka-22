@@ -35,3 +35,10 @@ document.addEventListener('keyup', function (event) {
     modalWindow.classList.add('modal--close');
   }
 });
+
+
+const mapImg = document.querySelector(".contacts__map-image");
+const mapFrame = document.querySelector(".contacts__map-frame");
+
+mapImg.classList.add("contacts__map-hidden");
+mapFrame.classList.remove("contacts__map-hidden");

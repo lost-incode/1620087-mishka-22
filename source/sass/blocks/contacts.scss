@@ -125,6 +125,8 @@
 }
 
 .contacts__map {
+  overflow: hidden;
+  position: relative;
   display: block;
   width: 100%;
   height: auto;
@@ -151,6 +153,25 @@
     grid-row-start: 1;
     grid-row-end: 4;
   }
+}
+
+.contacts__map-image::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  display: block;
+  width: 67px;
+  height: 100px;
+  background-image: url("../img/stack.svg#map-pin");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+}
+
+.contacts__map-hidden {
+  display: none;
 }
 
 .contacts__link-wrapper {
