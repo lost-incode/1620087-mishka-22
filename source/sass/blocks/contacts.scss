@@ -133,17 +133,10 @@
   margin: 0;
   box-sizing: border-box;
   object-fit: cover;
-
+  border: none;
 
   @media (max-width: $desktop-width - 1px) {
     margin: 0;
-
-    &-image {
-      // display: block;
-      width: 100%;
-      margin: 0;
-      object-fit: cover;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -153,6 +146,11 @@
     grid-row-start: 1;
     grid-row-end: 4;
   }
+}
+
+.contacts__map-frame {
+  width: 100%;
+  border: 0;
 }
 
 .contacts__map-image::after {
@@ -168,9 +166,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0;
+
+  @media (max-width: $desktop-width - 1px) {
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+  }
 }
 
-.contacts__map-hidden {
+.contacts__map--hidden {
   display: none;
 }
 
