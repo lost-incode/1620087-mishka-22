@@ -40,6 +40,9 @@
   right: 0;
   width: 20px;
   height: 14px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
   background-image: url("../img/stack.svg#toggle-closed");
 }
 
@@ -77,6 +80,9 @@
   left: 0;
   width: 21px;
   height: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
   background-image: url("../img/stack.svg#toggle-opened");
 }
 
