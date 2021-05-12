@@ -41,8 +41,8 @@
   border: 2px solid $basic-dark;
 }
 
-.form-color__checkbox:focus + .form-color__label {
-  outline: thin dotted;
+.form-color__checkbox:focus + .form-color__label::before {
+  outline: 2px solid $basic-black;
 }
 
 .form-color__checkbox:hover + .form-color__label::before {
@@ -51,6 +51,10 @@
 
 .form-color__checkbox:active + .form-color__label::before {
   border-color: $special-dark-active;
+}
+
+.form-color__checkbox:disabled + .form-color__label::before {
+  opacity: 0.3;
 }
 
 .form-color__checkbox:checked + .form-color__label::after {
