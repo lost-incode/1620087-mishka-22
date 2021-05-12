@@ -40,7 +40,7 @@
   right: 0;
   width: 20px;
   height: 14px;
-  background-image: url("../img/toggle-closed.svg");
+  background-image: url("../img/stack.svg#toggle-closed");
 }
 
 @media (max-width: $mobile-width-only) {
@@ -77,7 +77,7 @@
   left: 0;
   width: 21px;
   height: 20px;
-  background-image: url("../img/toggle-opened.svg");
+  background-image: url("../img/stack.svg#toggle-opened");
 }
 
 .main-nav__list {
