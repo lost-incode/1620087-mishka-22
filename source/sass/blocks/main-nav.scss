@@ -37,12 +37,12 @@
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
   width: 20px;
   height: 14px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 0;
+  background-position: 50% 50%;
   background-image: url("../img/stack.svg#toggle-closed");
 }
 
@@ -77,12 +77,12 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  right: 21px;
   width: 21px;
   height: 20px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 0;
+  background-position: 50% 50%;
   background-image: url("../img/stack.svg#toggle-opened");
 }
 
