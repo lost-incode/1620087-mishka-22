@@ -67,34 +67,36 @@
   </div>
     <main class="page-main">
       <div class="modal">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__subtitle">Выберите размер:</p>
-        <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
-          <div class="modal__form-size" role="group" aria-labelledby="legend-size">
-            <div class="modal__legend" id="legend-size">
-              <span class="visually-hidden">Размер</span>
+        <div class="modal__wrapper">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <p class="modal__subtitle">Выберите размер:</p>
+          <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
+            <div class="modal__form-size" role="group" aria-labelledby="legend-size">
+              <div class="modal__legend" id="legend-size">
+                <span class="visually-hidden">Размер</span>
+              </div>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <input class="modal__radio visually-hidden" type="radio" name="order-size" id="small" value="small" checked>
+                  <label class="modal__label" for="small">S</label>
+                </li>
+                <li class="modal__item">
+                  <input class="modal__radio visually-hidden" type="radio" name="order-size" id="middle" value="middle">
+                  <label class="modal__label" for="middle">M</label>
+                </li>
+                <li class="modal__item">
+                  <input class="modal__radio visually-hidden" type="radio" name="order-size" id="large" value="large">
+                  <label class="modal__label" for="large">L</label>
+                </li>
+              </ul>
+              <!-- Скрытое поле для хранения информации о товаре (через js планируется прокидывать данные о товаре (артикул к примеру), исходя из того, на какую корзинку-ссылку нажатие было сделано) -->
+              <input type="hidden" name="good_id" value="">
             </div>
-            <ul class="modal__list">
-              <li class="modal__item">
-                <input class="modal__radio visually-hidden" type="radio" name="order-size" id="small" value="small" checked>
-                <label class="modal__label" for="small">S</label>
-              </li>
-              <li class="modal__item">
-                <input class="modal__radio visually-hidden" type="radio" name="order-size" id="middle" value="middle">
-                <label class="modal__label" for="middle">M</label>
-              </li>
-              <li class="modal__item">
-                <input class="modal__radio visually-hidden" type="radio" name="order-size" id="large" value="large">
-                <label class="modal__label" for="large">L</label>
-              </li>
-            </ul>
-            <!-- Скрытое поле для хранения информации о товаре (через js планируется прокидывать данные о товаре (артикул к примеру), исходя из того, на какую корзинку-ссылку нажатие было сделано) -->
-            <input type="hidden" name="good_id" value="">
-          </div>
-          <button class="modal__button" type="submit">
-            Добавить
-          </button>
-        </form>
+            <button class="modal__button" type="submit">
+              Добавить
+            </button>
+          </form>
+        </div>
       </div>
     </main>
 

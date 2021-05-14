@@ -1,7 +1,7 @@
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 const modalLinks = document.querySelectorAll('.cart-link');
-const modalWindow = document.querySelector('.modal__wrapper');
+const modalWindow = document.querySelector('.modal');
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -41,4 +41,4 @@ const mapImg = document.querySelector(".contacts__map-image");
 const mapFrame = document.querySelector(".contacts__map-frame");
 
 mapImg.classList.add("contacts__map--hidden");
-mapFrame.classList.remove("contacts__map--hidden");
+mapFrame.classList.remove("contacts__map-hidden");
