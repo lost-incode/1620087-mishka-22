@@ -10,7 +10,7 @@
   }
 }
 
-.form__fieldset--grid {
+.form__fieldset-grid {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 3fr;
