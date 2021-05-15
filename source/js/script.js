@@ -3,6 +3,7 @@ const navToggle = document.querySelector('.main-nav__toggle');
 const modalLinks = document.querySelectorAll('.cart-link');
 const modalWindow = document.querySelector('.modal');
 const modalClose = modalWindow.querySelector('.modal__button-close');
+const mapFrame = document.querySelector(".contacts__map-frame");
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -42,8 +43,4 @@ modalClose.addEventListener('click', function(){
   modalWindow.classList.add('modal--close');
 });
 
-const mapImg = document.querySelector(".contacts__map-image");
-const mapFrame = document.querySelector(".contacts__map-frame");
-
-mapImg.classList.add("contacts__map-hidden");
 mapFrame.classList.remove("contacts__map-hidden");
