@@ -195,6 +195,8 @@
 }
 
 .main-nav__link-search {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -226,13 +228,20 @@
   mask-position: 50% 50%;
   mask-image: url("../img/stack.svg#icon-search");
   background-color: $special-icon-gray;
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
 }
 
 .main-nav__link-basket {
   position: relative;
-  padding-left: 46px;
 
   @media (min-width: $tablet-width) {
+    padding-left: 46px;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -252,8 +261,9 @@
   position: absolute;
   content: "";
   display: block;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translate(0, -50%);
   width: 21px;
   height: 18px;
   mask-repeat: no-repeat;
