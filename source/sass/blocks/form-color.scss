@@ -41,7 +41,7 @@
   border: 2px solid $basic-dark;
 }
 
-.form-color__checkbox:focus + .form-color__label::before {
+.form-color__checkbox:focus-visible + .form-color__label::before {
   outline: 2px solid $basic-black;
 }
 
