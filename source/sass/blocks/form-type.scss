@@ -25,8 +25,8 @@
   border-radius: 50%;
 }
 
-.form-type__radio:focus + .form-type__label {
-  outline: thin dotted;
+.form-type__radio:focus-visible + .form-type__label::before {
+  outline: 2px solid $basic-black;
 }
 
 .form-type__radio:hover + .form-type__label::before {
