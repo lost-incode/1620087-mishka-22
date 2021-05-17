@@ -74,7 +74,7 @@
 
   &::after {
     top: 25px;
-    right: 30px;
+    right: 35px;
     width: 40px;
     mask-image: url("../img/stack.svg#lamp");
   }
@@ -89,8 +89,8 @@
   background-color: $basic-extra-blue;
 
   &::after {
-    top: 25px;
-    right: 30px;
+    top: 22px;
+    right: 28px;
     width: 62px;
     mask-image: url("../img/stack.svg#toy");
   }

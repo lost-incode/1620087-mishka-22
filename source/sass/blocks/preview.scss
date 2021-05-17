@@ -59,7 +59,7 @@
   box-sizing: border-box;
   background-image: url("../img/index/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center -15.8px;
   background-size: 320px 373px;
 
   @media (max-width: $mobile-width-only) and (min-resolution: 2dppx) {
@@ -90,7 +90,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   margin: 0;
-  margin-top: -72px;
+  margin-top: -90px;
 
 
   @media (min-width: $tablet-width) {
