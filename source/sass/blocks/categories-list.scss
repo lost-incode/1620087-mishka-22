@@ -43,6 +43,10 @@
 
   @media (min-width: $tablet-width) {
     height: 100%;
+    padding: 25px 30px 34px 36px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &::after {
@@ -93,6 +97,10 @@
     right: 28px;
     width: 62px;
     mask-image: url("../img/stack.svg#toy");
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+    }
   }
 }
 
