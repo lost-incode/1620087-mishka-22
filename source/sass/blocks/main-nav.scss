@@ -113,7 +113,7 @@
 }
 
 .main-nav__list-inside {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (max-width: $desktop-width - 1px) {
     display: none;
   }
 
@@ -232,7 +232,7 @@
   @media (max-width: $mobile-width-only) {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 8px;
     transform: translate(0, -50%);
   }
 }
@@ -262,7 +262,7 @@
   content: "";
   display: block;
   top: 50%;
-  left: 0;
+  left: 8px;
   transform: translate(0, -50%);
   width: 21px;
   height: 18px;

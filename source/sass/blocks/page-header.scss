@@ -55,8 +55,11 @@
   text-align: center;
   padding: 22px 30px 22px 46px;
   z-index: 2;
+  box-sizing: border-box;
+  height: 79px;
 
   @media (min-width: $tablet-width) {
+    height: auto;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
