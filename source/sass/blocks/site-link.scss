@@ -12,6 +12,23 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    padding: 27.5px 10px 24.5px 46px;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -30px;
+      display: block;
+      width: 320px;
+      height: 1px;
+      background-color: $basic-light;
+    }
+  }
 }
 
 .site-link:hover {

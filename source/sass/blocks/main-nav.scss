@@ -232,7 +232,7 @@
   @media (max-width: $mobile-width-only) {
     position: absolute;
     top: 50%;
-    left: 8px;
+    left: 0;
     transform: translate(0, -50%);
   }
 }
@@ -262,7 +262,7 @@
   content: "";
   display: block;
   top: 50%;
-  left: 8px;
+  left: 0;
   transform: translate(0, -50%);
   width: 21px;
   height: 18px;
