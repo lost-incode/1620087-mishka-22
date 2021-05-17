@@ -146,10 +146,22 @@
 
 .feedback__nav {
   @media (max-width: $tablet-width - 1px) {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 52px;
     align-items: center;
+    border: 1px solid $basic-light;
+
+    &::after {
+      position: absolute;
+      left: 50%;
+      content: "";
+      display: block;
+      width: 1px;
+      height: 52px;
+      background-color: $basic-light;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -171,7 +183,7 @@
 
 .feedback__button-previous,
 .feedback__button-next {
-  @media (max-width: $tablet-width - 1px) {
+  @media (max-width: $mobile-width-only) {
     justify-self: center;
   }
 
