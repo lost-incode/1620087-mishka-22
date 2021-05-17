@@ -4,3 +4,15 @@
   padding: 0;
   list-style: none;
 }
+
+.site-list__item-link {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
