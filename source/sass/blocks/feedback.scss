@@ -34,8 +34,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 78px;
-    padding-bottom: 96px;
+    padding-top: 72px;
+    padding-bottom: 166px;
     // margin-bottom: 67px;
   }
 }
@@ -238,5 +238,9 @@
     grid-row-start: 1;
     grid-row-end: 2;
     align-self: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
   }
 }
