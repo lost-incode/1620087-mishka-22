@@ -5,6 +5,10 @@
     padding-top: 54px;
     background-color: $special-light;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 17px;
+  }
 }
 
 .form-color__list {
@@ -17,6 +21,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 110px;
   }
 }
 
@@ -60,6 +65,13 @@
     top: -5px;
     width: 50px;
     height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -1px;
+    top: -10px;
+    width: 48px;
+    height: 48px;
   }
 }
 

@@ -26,6 +26,10 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    height: 200px;
+  }
 }
 
 .page-main__title {
@@ -41,6 +45,11 @@
     font-weight: bold;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 

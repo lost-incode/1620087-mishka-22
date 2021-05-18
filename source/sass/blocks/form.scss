@@ -8,6 +8,11 @@
     padding-top: 30px;
     padding-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
 }
 
 .form__fieldset-grid {
@@ -54,7 +59,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-self: center;
+    padding-left: 60px;
   }
 }
 
@@ -139,6 +144,10 @@
     order: 1;
     justify-self: end;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 13px;
+  }
 }
 
 .form__submit-wrapper {
@@ -164,5 +173,9 @@
   @media (min-width: $tablet-width) {
     min-width: 230px;
     height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 175px;
   }
 }

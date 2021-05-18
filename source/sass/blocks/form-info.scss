@@ -31,7 +31,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 115px 4fr 1fr;
     align-items: center;
   }
 }
@@ -48,7 +48,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 115px 4fr 1fr;
   }
 }
 
@@ -59,11 +59,23 @@
     padding-top: 35px;
     padding-bottom: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 35px;
+  }
 }
 
 .form-info__label--phone {
   position: relative;
   padding-top: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+
+    & span {
+      padding-top: 13px;
+    }
+  }
 
   &::after {
     content: "";
@@ -83,7 +95,7 @@
 
     @media (min-width: $desktop-width) {
       right: 181px;
-      top: 18px;
+      top: 32px;
     }
   }
 }
@@ -92,9 +104,16 @@
   position: relative;
   padding-top: 15px;
 
-
   @media (min-width: $tablet-width) {
     padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+
+    & span {
+      padding-top: 13px;
+    }
   }
 
   &::after {
