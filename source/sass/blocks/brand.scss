@@ -40,8 +40,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 175px 2fr 3fr;
-    grid-template-rows: 118px 35px 1fr 1fr 1fr;
-    padding-top: 54px;
+    grid-template-rows: 148px 17px 0.83fr 1fr 0.8fr;
+    padding-top: 44px;
     padding-bottom: 96px;
   }
 }
@@ -65,6 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -104,6 +105,11 @@
     grid-row-end: 2;
     justify-self: start;
     align-self: flex-end;
+    padding-bottom: 15px;
+    padding-left: 29px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 17px;
   }
 }
 
@@ -212,6 +218,7 @@
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
+    align-self: flex-end;
     padding-right: 58px;
   }
 }
@@ -230,5 +237,9 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 15px;
   }
 }

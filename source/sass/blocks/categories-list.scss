@@ -39,6 +39,8 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
+    box-shadow: 0 5px 0 $basic-blue;
+    z-index: 1;
   }
 
   &::after {
@@ -88,6 +90,10 @@
 
 .categories-list__link--toy {
   background-color: $basic-extra-blue;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: 0 5px 0 $basic-extra-blue;
+  }
 
   &::after {
     top: 22px;
