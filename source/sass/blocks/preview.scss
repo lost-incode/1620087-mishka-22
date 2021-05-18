@@ -24,8 +24,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      bottom: -17px;
-      height: 40px;
+      bottom: -25px;
+      height: 45px;
     }
   }
 }
@@ -51,6 +51,7 @@
     min-width: 700px;
     font-size: 53px;
     line-height: 57px;
+    padding: 90px 10px;
   }
 }
 
@@ -82,6 +83,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/index/hero-desktop@1x.jpg");
     background-size: 1150px 746px;
+    background-position: center -67px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/hero-desktop@2x.jpg");
@@ -98,15 +100,11 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -185px;
-    // position: absolute;
-    // top: 300px;
-    // left: 50%;
-    // transform: translate(-50%, 0);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -119px;
+    margin-top: -185px;
   }
 }
