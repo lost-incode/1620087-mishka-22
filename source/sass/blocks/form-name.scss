@@ -1,7 +1,7 @@
 .form-name__legend {
   display: block;
-  // padding-top: 10px;
-  // padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 5px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -16,6 +16,10 @@
     padding-right: 174px;
   }
 }
+
+// .form-name__item {
+//   // padding-top: 5px;
+// }
 
 .form-name__label {
   display: block;

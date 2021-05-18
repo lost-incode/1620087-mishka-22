@@ -7,7 +7,7 @@
   display: block;
   position: relative;
   min-height: 42px;
-  padding: 11px 10px 11px 60px;
+  padding: 11px 10px 5px 60px;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -17,10 +17,10 @@
   content: "";
   display: block;
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 42px;
-  height: 42px;
+  left: -1px;
+  top: 4px;
+  width: 36px;
+  height: 36px;
   border: 2px solid $basic-dark;
   border-radius: 50%;
 }
@@ -41,10 +41,10 @@
   content: "";
   display: block;
   position: absolute;
-  left: 14px;
-  top: 14px;
-  width: 18px;
-  height: 18px;
+  left: 12px;
+  top: 16px;
+  width: 16px;
+  height: 16px;
   background-color: $basic-blue;
   border-radius: 50%;
 }
