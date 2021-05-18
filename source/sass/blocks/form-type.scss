@@ -43,6 +43,11 @@
     width: 45px;
     height: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 1px;
+    top: -5px;
+  }
 }
 
 .form-type__radio:focus-visible + .form-type__label::before {
@@ -73,5 +78,10 @@
     top: 12px;
     width: 22px;
     height: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 14px;
+    top: 8px;
   }
 }

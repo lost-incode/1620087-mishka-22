@@ -19,4 +19,12 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+    margin-left: 174px;
+    margin-right: 171px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
