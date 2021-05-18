@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
+    padding-bottom: 18px;
   }
 }
 
@@ -34,8 +35,8 @@
 
 .features__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 100px;
+  grid-template-columns: 1fr 1.2fr;
+  column-gap: 60px;
   grid-template-rows: repeat(auto-fit, min-content);
   margin: 0;
   padding: 0;
@@ -56,6 +57,9 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 60px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
