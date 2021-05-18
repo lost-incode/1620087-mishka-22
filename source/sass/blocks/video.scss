@@ -3,6 +3,8 @@
   flex-direction: column;
   border-top: 1px solid $basic-light;
   border-bottom: 1px solid $basic-light;
+  border-left: 1px solid $basic-light;
+  border-right: 1px solid $basic-light;
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -115,7 +117,7 @@
 
 .video__description {
   margin: 0;
-  padding: 35px 0 34px 41px;
+  padding: 20px 0 25px 33px;
   font-size: 13px;
   line-height: 24px;
   color: $basic-dark;
@@ -137,8 +139,14 @@
 }
 
 .video__button {
+  padding: 18px 11px;
+  margin: 0 34px;
+  max-width: 192px;
   margin-bottom: 33px;
   box-sizing: border-box;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 16px;
 
   @media (min-width: $tablet-width) {
     order: 3;

@@ -10,6 +10,8 @@
 }
 
 .catalog__card {
+  margin-top: 30px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
   }
@@ -18,9 +20,4 @@
     width: 316px;
     margin-bottom: 57px;
   }
-}
-
-.catalog__video {
-  margin-top: 30px;
-  margin-bottom: 58px;
 }
