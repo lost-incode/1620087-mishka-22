@@ -169,11 +169,25 @@
 
 .main-nav__catalog-link {
   @media (min-width: $desktop-width) {
+    height: 100%;
+    position: relative;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     align-self: center;
+    padding-top: 35px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 89px;
+      display: block;
+      background-color: $basic-light;
+    }
   }
 }
 
@@ -254,7 +268,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-left: 46px;
+    padding-left: 50px;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;

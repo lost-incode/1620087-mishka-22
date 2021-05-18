@@ -22,14 +22,6 @@
   }
 }
 
-// .categories-list__item--interior {
-//   background-color: $basic-blue;
-// }
-
-// .categories-list__item--toy {
-//   background-color: $basic-blue;
-// }
-
 .categories-list__link {
   position: relative;
   display: block;
@@ -81,6 +73,11 @@
     right: 35px;
     width: 40px;
     mask-image: url("../img/stack.svg#lamp");
+
+    @media (min-width: $desktop-width) {
+      top: 29px;
+      right: 40px;
+    }
   }
 }
 
@@ -100,6 +97,11 @@
 
     @media (min-width: $tablet-width) {
       top: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 31px;
+      right: 38px;
     }
   }
 }
