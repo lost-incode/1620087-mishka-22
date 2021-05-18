@@ -2,6 +2,7 @@
   padding-top: 17px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 54px;
     background-color: $special-light;
   }
 }
@@ -10,6 +11,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +22,10 @@
 
 .form-color__item {
   padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 29px;
+  }
 }
 
 .form-color__label {
@@ -30,6 +36,13 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 80px;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .form-color__checkbox + .form-color__label::before {
@@ -41,6 +54,13 @@
   width: 35px;
   height: 35px;
   border: 2px solid $basic-dark;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    top: -5px;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .form-color__checkbox:focus-visible + .form-color__label::before {
@@ -70,4 +90,11 @@
   border-bottom: 2px solid $basic-black;
   border-right: 2px solid $basic-black;
   transform: rotate(45deg);
+
+  @media (min-width: $tablet-width) {
+    left: 16px;
+    top: 0;
+    width: 14px;
+    height: 27px;
+  }
 }
