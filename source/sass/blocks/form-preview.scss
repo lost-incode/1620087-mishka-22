@@ -12,4 +12,11 @@
   font-size: 13px;
   line-height: 24px;
   color: $basic-dark;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

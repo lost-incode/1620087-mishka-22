@@ -5,12 +5,16 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
 
 .form-name__list {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-right: 174px;
@@ -18,7 +22,9 @@
 }
 
 // .form-name__item {
-//   // padding-top: 5px;
+//   @media (min-width: $tablet-width) {
+//     // padding-top: 5px;
+//   }
 // }
 
 .form-name__label {
@@ -32,6 +38,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 18px;
+    margin-bottom: 16px;
   }
 }
 
@@ -39,5 +49,8 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-left: 25px;
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 18px;
   }
 }

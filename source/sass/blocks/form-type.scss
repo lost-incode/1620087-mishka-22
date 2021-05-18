@@ -3,6 +3,12 @@
   border: none;
 }
 
+.form-type__item {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+}
+
 .form-type__label {
   display: block;
   position: relative;
@@ -11,6 +17,13 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 80px;
+  }
 }
 
 .form-type__radio + .form-type__label::before {
@@ -23,6 +36,13 @@
   height: 36px;
   border: 2px solid $basic-dark;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 2px;
+    top: -1px;
+    width: 45px;
+    height: 45px;
+  }
 }
 
 .form-type__radio:focus-visible + .form-type__label::before {
@@ -47,4 +67,11 @@
   height: 16px;
   background-color: $basic-blue;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 16px;
+    top: 12px;
+    width: 22px;
+    height: 22px;
+  }
 }

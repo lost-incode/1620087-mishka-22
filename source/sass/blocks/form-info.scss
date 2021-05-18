@@ -1,8 +1,9 @@
 .form-info__wrapper {
   @media (min-width: $tablet-width) {
     background-color: $special-light;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 13px;
+    padding-top: 16px;
+    padding-bottom: 32px;
   }
 }
 
@@ -39,6 +40,10 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 3fr;
+
+    & span {
+      padding-top: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -51,8 +56,8 @@
   padding-top: 1px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
-    padding-bottom: 53px;
+    padding-top: 35px;
+    padding-bottom: 40px;
   }
 }
 
@@ -73,7 +78,7 @@
 
     @media (min-width: $tablet-width) {
       right: 26px;
-      top: 18px;
+      top: 25px;
     }
 
     @media (min-width: $desktop-width) {
@@ -86,6 +91,11 @@
 .form-info__label--email {
   position: relative;
   padding-top: 15px;
+
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 
   &::after {
     content: "";
@@ -123,6 +133,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     padding-right: 57px;
+    padding-top: 15px;
   }
 }
 
