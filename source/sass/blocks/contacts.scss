@@ -13,8 +13,11 @@
 .contacts__wrapper {
   padding-top: 30px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
     max-width: 350px;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -26,7 +29,6 @@
 
 .contacts__title {
   position: relative;
-  // margin: 0;
   padding: 0;
   font-weight: bold;
   font-size: 18px;
@@ -34,9 +36,10 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    margin-top: 46px;
     font-size: 43px;
     line-height: 50px;
-    padding-top: 46px;
+    padding-top: 25px;
 
     &::before {
       content: "";
