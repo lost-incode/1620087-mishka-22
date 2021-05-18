@@ -78,6 +78,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    padding-bottom: 48px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -109,7 +110,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-right: 25px;
+    padding-right: 55px;
   }
 }
 
@@ -205,6 +206,8 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    margin-bottom: 55px;
     width: 230px;
   }
 
