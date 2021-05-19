@@ -19,6 +19,12 @@
     margin-right: 200px;
     max-width: calc(100% - 225px - 200px);
   }
+
+  @media (min-width: $desktop-width + 1px) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 725px;
+  }
 }
 
 .features__title {
