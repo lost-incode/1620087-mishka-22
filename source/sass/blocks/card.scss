@@ -21,7 +21,7 @@
 }
 
 .card--line {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     margin-top: 51px;
   }
 }
@@ -37,11 +37,16 @@
     padding-left: 30px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
+    padding-left: 27px;
   }
 }
 
@@ -107,6 +112,11 @@
     grid-row-end: 3;
   }
 
+  @media (min-width: $desktop-width) {
+    margin: 5px 28px 0 28px;
+    padding-bottom: 20px;
+  }
+
   ::after {
     position: absolute;
     content: "";
@@ -121,6 +131,12 @@
 .card__description--line {
   @media (min-width: $tablet-width) {
     margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 3px;
+    margin-left: 25px;
+    padding-bottom: 0;
   }
 }
 
@@ -146,7 +162,7 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 24px;
-    // margin-top: 21px;
+    margin-left: 30px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -154,6 +170,17 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 27px;
+    margin-left: 25px;
+  }
+}
+
+.card__price--line {
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
   }
 }
 
@@ -186,6 +213,7 @@
   @media (min-width: $tablet-width) {
     width: 21px;
     height: 18px;
+    left: -5px;
   }
 }
 
