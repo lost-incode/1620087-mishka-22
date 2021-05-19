@@ -84,9 +84,8 @@
 .video__link {
   position: absolute;
   display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 37px;
+  left: 80px;
   width: 101px;
   height: 77px;
   background-repeat: no-repeat;
@@ -96,11 +95,13 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    top: 189px;
+    left: 283px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 49%;
-    left: 51%;
+    top: 227px;
+    left: 341px;
     transform: translate(-50%, -50%);
   }
 }
