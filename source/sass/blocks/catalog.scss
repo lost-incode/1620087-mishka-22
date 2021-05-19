@@ -1,6 +1,10 @@
 .catalog {
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 71px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -13,7 +17,7 @@
   margin-top: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-top: 54px;
   }
 
   @media (min-width: $desktop-width) {
