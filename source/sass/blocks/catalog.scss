@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto-fit, min-content);
-    column-gap: 51px;
+    column-gap: 50px;
   }
 }
 
@@ -22,6 +22,7 @@
 
   @media (min-width: $desktop-width) {
     width: 316px;
+    margin-top: 45px;
     margin-bottom: 57px;
   }
 }
